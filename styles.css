@@ -1,0 +1,1548 @@
+/* Réinitialisation des styles */
+* {
+  box-sizing: border-box;
+}
+
+/* Styles de base pour le corps de la page */
+body {
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #ffffff 0%, #70c1c1 50%, #d3d3d3 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto; /* Ajoutez un espace au bas de la page pour le footer */
+}
+
+.container-website-width960px {
+    width: 960px;
+    margin: 0 auto; /* Centrer le contenu horizontalement */
+}
+
+/* Styles pour l'arrière-plan */
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/img1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+/* Styles pour la vidéo en arrière-plan */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Styles pour l'en-tête */
+.header {
+	animation: slideInFromTop 0.5s ease-in-out;
+	 border-bottom: 3px solid rgba(24, 53, 104, 1);/* Ligne décorative transparente par défaut */
+  transition: border-color 0.3s ease-in-out; /* Transition de la couleur de la ligne */
+	padding:20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* Styles pour le titre du site dans le header */
+.header h1{
+  font-family: "Audiowide", sans-serif;
+  font-size: 50px;
+  color: rgba(24, 53, 104, 1); /* Conserver la même couleur */
+ text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), /* Ombre blanche pour l'effet de nuage */
+               0 0 20px rgba(255, 255, 255, 0.5), /* Ombre blanche pour l'effet de nuage */
+               0 0 30px rgba(255, 255, 255, 0.3), /* Ombre blanche pour l'effet de nuage */
+               0 0 40px rgba(255, 255, 255, 0.2), /* Ombre blanche pour l'effet de nuage */
+               0 0 50px rgba(255, 255, 255, 0.1);
+  transition: text-shadow 0.3s ease, transform 0.3s ease; /* Transition pour l'ombre textuelle et la transformation */
+}
+
+
+
+/* Effet de transition au survol du titre */
+.header h1:hover {
+ text-shadow: 0 0 20px rgba(255, 255, 255, 0.9), /* Ombre blanche plus prononcée au survol */
+               0 0 30px rgba(255, 255, 255, 0.7), /* Ombre blanche plus prononcée au survol */
+               0 0 40px rgba(255, 255, 255, 0.5), /* Ombre blanche plus prononcée au survol */
+               0 0 50px rgba(255, 255, 255, 0.4), /* Ombre blanche plus prononcée au survol */
+               0 0 60px rgba(255, 255, 255, 0.3); /* Ombre textuelle plus prononcée au survol */
+  transform: scale(1.1); /* Légère mise à l'échelle au survol */
+}
+
+/* Styles pour l'icône à gauche du titre */
+.header i.fa-solid {
+  font-size: 60px; /* Ajuster la taille de l'icône */
+  color: rgba(24, 53, 104, 0.8); /* Ajuster la couleur de l'icône */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), /* Ombre blanche pour l'effet de nuage */
+               0 0 20px rgba(255, 255, 255, 0.5), /* Ombre blanche pour l'effet de nuage */
+               0 0 30px rgba(255, 255, 255, 0.3), /* Ombre blanche pour l'effet de nuage */
+               0 0 40px rgba(255, 255, 255, 0.2), /* Ombre blanche pour l'effet de nuage */
+               0 0 50px rgba(255, 255, 255, 0.1); /* Ombre blanche pour l'effet de nuage */
+}
+
+/* Effet de transition au survol du titre */
+.header h1:hover, .header i.fa-solid:hover {
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.9), /* Ombre blanche plus prononcée au survol */
+               0 0 30px rgba(255, 255, 255, 0.7), /* Ombre blanche plus prononcée au survol */
+               0 0 40px rgba(255, 255, 255, 0.5), /* Ombre blanche plus prononcée au survol */
+               0 0 50px rgba(255, 255, 255, 0.4), /* Ombre blanche plus prononcée au survol */
+               0 0 60px rgba(255, 255, 255, 0.3); /* Ombre blanche plus prononcée au survol */
+  transform: scale(1.05); /* Légère mise à l'échelle au survol */
+}
+
+
+/* Ajout d'une ligne décorative avec un dégradé subtil */
+.decorative-line {
+  height: 5px; /* Hauteur de la ligne */
+  width: 100%; /* Largeur de la ligne */
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)); /* Dégradé subtil */
+}
+
+
+.box {
+  height: 800px;
+  margin-top:15%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  padding: 40px;
+  z-index:30;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Effet de nuage */
+  border: 2px solid rgba(24, 53, 104, 1); /* Bordure avec la couleur spécifiée */
+  
+}
+
+/* Styles pour les boîtes supplémentaires */
+.extra-box {
+  z-index:29;
+  margin: 10px;
+  width: 650px; /* Ajuster la largeur et l'espace entre les boîtes */
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.8); /* Couleur de fond avec opacité */
+  border: 2px solid rgba(24, 53, 104, 1); /* Bordure */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif; /* Police */
+  font-weight: bold;
+  color: rgba(24, 53, 104, 1); /* Couleur du texte */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Transition pour l'effet de survol */
+}
+
+.extra-box:hover {
+  background-color: #dcdcdc; /* Changement de couleur de fond au survol */
+  transform: scale(1.05); /* Agrandissement au survol */
+  cursor: pointer;
+}
+
+.box-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  
+}
+
+/* Image de profil */
+.profile-picture {
+  margin-left:50px;
+  width: 110px;
+  height: 110px;
+  border:4px solid rgb(24,53,104);
+  border-radius: 50%;
+  background-image: url('images/p1.png'); /* URL de votre image */
+  background-size: cover;
+  background-position: center;
+  margin-right: 30px; /* Réduit la marge pour rapprocher la photo du commentaire */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Image de profil */
+.profile-picture-two {
+  margin-left:50px;
+  width: 110px;
+  height: 110px;
+  border:4px solid rgb(24,53,104);
+  border-radius: 50%;
+  background-image: url('images/p2.png'); /* URL de votre image */
+  background-size: cover;
+  background-position: center;
+  margin-right: 30px; /* Réduit la marge pour rapprocher la photo du commentaire */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Image de profil */
+.profile-picture-three {
+  margin-left:50px;
+  width: 110px;
+  height: 110px;
+  border:4px solid rgb(24,53,104);
+  border-radius: 50%;
+  background-image: url('images/p3.png'); /* URL de votre image */
+  background-size: cover;
+  background-position: center;
+  margin-right: 30px; /* Réduit la marge pour rapprocher la photo du commentaire */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Image de profil */
+.profile-picture-four {
+  margin-left:50px;
+  width: 110px;
+  height: 110px;
+  border:4px solid rgb(24,53,104);
+  border-radius: 50%;
+  background-image: url('images/p4.png'); /* URL de votre image */
+  background-size: cover;
+  background-position: center;
+  margin-right: 30px; /* Réduit la marge pour rapprocher la photo du commentaire */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.profile-picture:hover, .profile-picture-two:hover, .profile-picture-three:hover, .profile-picture-four:hover {
+  transform: scale(1.3);
+  opacity: 1;
+}
+
+/* Styles pour le contenu */
+.all {
+  display: inline-block;
+  width: 100%;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-top: 100px;
+  min-height: calc(100vh - 220px);
+  padding-bottom: 20px auto;
+  z-index: 0;
+}
+
+.content-text {
+  text-align: center;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  color: rgba(24, 53, 104, 1); /* Ajout de la couleur de texte */
+}
+
+.content-text-box h2 {
+  animation: bounce 0.25s infinite alternate;
+}
+
+/* Styles pour les titres et paragraphes à l'intérieur de .content-text */
+.content-text h2,
+.content-text h3,
+.content-text h4,
+.content-text p {
+  color: rgba(24, 53, 104, 1); /* Ajout de la couleur de texte */
+}
+
+
+
+
+
+
+
+.calendar {
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.header {
+  background-color: #70c1c1;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.days {
+  display: flex;
+}
+
+.day {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.dates {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.date {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.other-month {
+  color: #ccc;
+}
+
+
+.content-text-box {
+  border: 2px solid rgba(24, 53, 104, 1); /* Bordure avec la couleur spécifiée */
+  border-radius: 20px; /* Arrondi des coins */
+  margin-top:15%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Effet de nuage */
+}
+
+.content-text-box-news {
+  border: 2px solid rgba(24, 53, 104, 1); /* Bordure avec la couleur spécifiée */
+  border-radius: 20px; /* Arrondi des coins */
+  margin-top:15%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Effet de nuage */
+}
+
+
+.product h4 {
+  color: rgba(24, 53, 104, 1);
+  font-weight:bold;/* Même couleur que le texte "Welcome to Winterspring" */
+  
+}
+
+.product p {
+	color: rgba(24, 53, 104, 1);
+}
+
+
+/* Styles pour la grille de produits */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+.product, .extra-box {
+  border-radius: 10px; /* Arrondi des coins */
+  border: 2px solid #70c1c1; /* Bordure avec la couleur spécifiée */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre */
+  opacity: 0.7; /* Opacité par défaut */
+  transition: opacity 0.3s ease, background-color 0.3s ease; /* Transition pour l'opacité et la couleur de fond */
+}
+
+
+.product:hover, .extra-box:hover {
+  border: 4px solid rgba(24, 53, 104, 1); /* Bordure épaisse avec la couleur spécifiée */
+  transform: scale(1.1); /* Agrandissement de la carte */
+  cursor: pointer;
+  opacity: 1; /* Opacité au survol */
+  background-color: transparent; /* Couleur de fond au survol */
+}
+
+.product.active, .extra-box.active  {
+  background-color: #dcdcdc;
+  border: 2px solid #183568;
+}
+
+.product:not(.active):hover, .extra-box:not(.active):hover {
+  border: 2px solid #ffffff; /* Bordure blanche */
+}
+
+.product img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.contmsg{
+	font-size:19px;
+	color:rgb(24,53,104);
+}
+
+.homemsg {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #183568;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border: 2px solid #70c1c1;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.homemsg:hover {
+  border-color: #45a049;
+}
+
+
+.eco-text p {
+    text-align: justify; /* Justification du texte */
+    line-height: 1.5; /* Hauteur de ligne */
+    margin-bottom: 20px; /* Espacement en bas */
+}
+
+.eco-text p::first-letter {
+    font-size: 150%; /* Taille de la première lettre */
+    margin-right: 5px; /* Marge à droite de la première lettre */
+    float: left; /* Flottant à gauche */
+    color: #70c1c1; /* Couleur de la première lettre */
+    font-weight: bold; /* Gras */
+}
+
+.eco-text p:last-child {
+    margin-bottom: 0; /* Supprime l'espacement en bas pour le dernier paragraphe */
+}
+
+
+.welc, .disc, .rev, .cont, .count, .prod, .loc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styles pour le titre du site */
+.websiteTitle, .welcome, .review, .contact, .country  {
+  margin-left: 40px;
+}
+
+.welcome {
+	margin-right:40px;
+    color: rgb(24, 53, 104); /* Couleur du texte en bleu */
+    font-weight: bold; /* Gras */
+    letter-spacing: 2px; /* Espacement des lettres */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre portée */
+    border-bottom: 2px solid #70c1c1; /* Bordure inférieure */
+    padding-bottom: 10px; /* Espacement en bas */
+}
+
+.welcome:hover {
+    color: #70c1c1; /* Changement de couleur au survol */
+}
+
+.welcome::before {
+    font-family: 'Font Awesome 5 Free'; /* Famille de police de l'icône */
+    margin-right: 10px; /* Marge à droite de l'icône */
+}
+
+.welcome::after {
+    font-family: 'Font Awesome 5 Free'; /* Famille de police de l'icône */
+    margin-left: 10px; /* Marge à gauche de l'icône */
+}
+
+.welcome:hover::before,
+.welcome:hover::after {
+    color: #ffffff; /* Changement de couleur de l'icône au survol */
+}
+
+
+.produit{
+	margin-left: 40px;
+	color:rgb(24,53,104);
+}
+
+.discover{
+  margin-left: 40px;
+  font-size:23px;
+   display: inline-block;
+  padding: 10px 20px;
+  background-color: #70c1c1;
+  color: white;
+  text-decoration:none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.discover:hover {
+	color:white;
+  background-color: #0d244c;
+}
+
+
+.review p {
+  margin-top:20px;
+  margin-right: 80px;
+}
+
+.review-two p {
+  margin-top:20px;
+  margin-right: 91px;
+}
+
+.review-three p {
+  margin-top:20px;
+  margin-right: 72px;
+}
+
+.review-four p {
+  margin-top:20px;
+  margin-right: 86px;
+}
+
+/* Étoiles */
+/* Étoiles */
+.star-rating {
+  display: flex;
+  justify-content: flex-middle;
+  align-items: center;
+  margin-left: 40px; /* Réduit la marge pour rapprocher l'étoile du commentaire */
+  position: relative; /* Assure que les étoiles sont positionnées relativement */
+  z-index: 32; /* Assure que les étoiles sont superposées aux boîtes */
+}
+
+.star.filled {
+  font-size: 50px;
+  color: #F9DF80;
+  position: relative; /* Assure que les étoiles sont positionnées relativement */
+  z-index: 32; /* Assure que les étoiles sont superposées aux boîtes */
+}
+
+.star {
+  font-size: 50px;
+  color: rgb(24,53,104); /* Couleur de bordure des étoiles non remplies */
+  position: relative; /* Assure que les étoiles sont positionnées relativement */
+  z-index: 32; /* Assure que les étoiles sont superposées aux boîtes */
+}
+
+
+
+.sidebar {
+  position: fixed; /* Changement de position en fixe */
+  top: 210px; /* Position par rapport au haut de la page */
+  left: 40px; /* Position par rapport à la gauche de la page */
+  padding: 0;
+  width: 200px;
+  z-index: 900;
+  height: calc(100vh - 250px); /* Hauteur dynamique basée sur la hauteur de la fenêtre */
+}
+
+/* Styles pour les liens de la barre latérale */
+.sidebar a {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 6px;
+  background: linear-gradient( 45deg, #001f3f 0%, #002b4d 20%, #003359 40%,#003f66 60%,  #004a73 80%,lightblue 90%, white 100%);
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  border: 2px solid #183568;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  margin: 5px; /* Espacement entre les liens */
+  border-radius: 10px; /* Bordures arrondies */
+  position: relative;
+}
+
+.sidebar a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: transform 0.5s;
+  transform: translateX(-100%) rotate(45deg);
+  transform-origin: left;
+}
+.main-container {
+    position: relative;
+}
+
+.background-box {
+	box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Effet de nuage */
+	border: 2px solid rgba(24, 53, 104, 1); 
+    margin-top: 153px; /* Centrage vertical et réduction de la marge */
+	margin-bottom:40px;
+    position: relative;
+    width: 70%; /* Agrandissement de la largeur */
+    height: auto; /* Réglage automatique de la hauteur */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px; /* Ajout de bordures arrondies */
+    z-index: -1;
+}
+
+.background-box-gal {
+	padding:20px;
+	box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Effet de nuage */
+	border: 2px solid rgba(24, 53, 104, 1); 
+    margin-top: 153px; /* Centrage vertical et réduction de la marge */
+	margin-bottom:40px;
+    position: relative;
+    width: 100%; /* Agrandissement de la largeur */
+    height: auto; /* Réglage automatique de la hauteur */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px; /* Ajout de bordures arrondies */
+    z-index: -1;
+}
+
+.product-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Pour aligner les dropdowns en dessous des liens */
+}
+
+.product-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.product-links-container {
+
+    margin-bottom: 40px;
+}
+
+.product-links-gal {
+	margin:auto;
+	width:60%;
+    margin-bottom: 40px;
+	 font-size: 11px;
+    display: flex;
+    justify-content: space-between; /* Aligne les éléments avec un espace entre eux */
+    align-items: center; /* Centre les éléments verticalement */
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    flex-wrap: wrap; /* Permettre le wrap sur les petits écrans */
+}
+
+.product-links {
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between; /* Aligne les éléments avec un espace entre eux */
+    align-items: center; /* Centre les éléments verticalement */
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    flex-wrap: wrap; /* Permettre le wrap sur les petits écrans */
+}
+
+.product-link {
+    text-decoration: none;
+    color: #183568;
+    font-size: 12px; /* Taille du texte des liens */
+}
+
+.product-link:hover {
+    color: #70c1c1;
+}
+
+/* Style pour les listes déroulantes */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: #183568;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-content a {
+    color: #183568;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #70c1c1;
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: #70c1c1;
+}
+
+/* Media queries pour petits écrans */
+@media screen and (max-width: 768px) {
+    .product-links, .product-links-gal {
+        flex-direction: column; /* Afficher les éléments en colonne */
+        font-size: 10px; /* Réduire la taille du texte */
+    }
+    .dropbtn {
+        font-size: 1em; /* Ajuster la taille du texte des boutons */
+    }
+    .product-link {
+        font-size: 11px; /* Ajuster la taille du texte des liens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .product-container h1 {
+        font-size: 1.5em; /* Réduire la taille du titre */
+    }
+    .product-links, .product-links-gal {
+        padding: 10px;
+    }
+    .dropbtn {
+        font-size: 0.9em; /* Réduire encore la taille du texte des boutons */
+    }
+    .product-link {
+        font-size: 10px; /* Réduire encore la taille du texte des liens */
+    }
+}
+
+
+
+
+
+.page-link {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white; /* Couleur du texte */
+    background-color: #70c1c1; /* Couleur de fond */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.page-link:hover {
+    background-color: rgb(24,53,104); /* Couleur de fond au survol */
+    color: #fff; /* Couleur du texte au survol */
+}
+
+/* Styles pour les conteneurs de liens */
+.links-bottom {
+	margin-top:20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 -15px; /* Ajustement des marges */
+}
+
+.product-card {
+	font-size:10px;
+    width: calc(33.33% - 30px); /* Ajustement de la largeur des cartes */
+    margin: 15px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s; /* Ajout de transitions supplémentaires */
+    position: relative;
+    overflow: hidden;
+}
+
+.pc-helm {
+    height: 300px;
+}
+
+.product-card img {
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s; /* Transition de l'effet de survol pour l'image */
+}
+
+.product-card img.helm  {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    transition: transform 0.2s; /* Transition de l'effet de survol pour l'image */
+}
+
+
+
+.product-card-content {
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.product-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: rgb(24, 53, 104); /* Couleur du nom du produit */
+}
+
+.product-card p {
+	font-size:15px;
+    margin: 5px 0;
+    font-weight: bold; /* Texte du prix en gras */
+    color: #000; /* Couleur du prix en noir */
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Agrandissement supplémentaire au survol */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgb(24, 53, 104); /* Changement de couleur au survol */
+}
+
+.product-card:hover img {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+@media (max-width: 992px) {
+    .product-card {
+        width: calc(50% - 30px); /* Pour les écrans plus petits, afficher deux cartes par ligne */
+    }
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        width: calc(100% - 30px); /* Pour les écrans encore plus petits, afficher une carte par ligne */
+    }
+}
+
+
+.sidebar a i {
+  margin-right: 10px;
+}
+
+.sidebar a.active {
+  background-color: #0277bd;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background: linear-gradient(45deg, #183568 0%, #204080 20%, #2870a0 40%, #30a0c0 60%, #70c1c1, lightblue 90%, white 100%);
+  color: white;
+  border-color: #0277bd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05); /* Légère mise à l'échelle au survol */
+}
+
+/* Styles pour la barre horizontale */
+.hbar {
+  display: none;
+  position: fixed;
+  top: 173px;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre portée */
+  z-index: 900;
+}
+
+.hbar a {
+  float: left;
+  display: block;
+  color: white;
+  padding: 6px;
+  background: linear-gradient( 45deg, #001f3f 0%, #002b4d 20%, #003359 40%,#003f66 60%,  #004a73 80%,lightblue 90%, white 100%);
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  border: 2px solid #183568;
+  border-radius: 10px; /* Bordures arrondies */
+  transition: all 0.3s ease-in-out;
+}
+
+.hbar a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: transform 0.5s;
+  transform: translateX(-100%) rotate(45deg);
+  transform-origin: left;
+}
+
+.hbar a i {
+  margin-right: 10px;
+}
+
+.hbar a.active {
+  background: #0277bd);
+  color: white;
+}
+
+.hbar a:hover:not(.active) {
+  background: linear-gradient(45deg, #183568 0%, #204080 20%, #2870a0 40%, #30a0c0 60%, #70c1c1, lightblue 90%, white 100%);
+  color: white;
+  border-color: #0277bd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05); /* Légère mise à l'échelle au survol */
+}
+
+/* Styles pour le formulaire de contact */
+
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 50%;
+  padding: 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #70c1c1;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  border-color: #45a049;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgb(24, 53, 104);
+}
+.contact-form input[type="text"]:hover,
+.contact-form input[type="email"]:hover,
+.contact-form textarea:hover {
+  background-color: #f0f0f0;
+}
+
+
+.contact-form button[type="submit"] {
+  background-color: #70c1c1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 14px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover,
+.contact-form select:hover {
+  opacity: 1;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 100px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.contact-form button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #45a049;
+}
+
+.contact-form .send {
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  background-color: #70c1c1;
+  font-size: 23px;
+  opacity: 1;
+  color: white;
+  height: 50px;
+  width: 30%; /* ou une autre valeur de largeur selon vos besoins */
+}
+
+.send {
+  font-weight: bold;
+}
+
+.send:hover {
+  background-color: #0d244c;
+}
+
+
+ .country-selection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrer les éléments horizontalement */
+  }
+
+  .country-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 50%; /* Chaque élément occupe 50% de la largeur */
+  }
+  
+   .country-item:first-child {
+    margin-left: 0; /* Retire la marge gauche du premier élément */
+  }
+
+  .country-item:last-child.zim {
+    margin-left: auto; /* Aligne l'élément Zimbabwe à droite */
+    margin-right: 0; /* Supprime la marge droite pour éviter les débordements */
+  }
+
+  .country-item input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .country-item label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .country-item label:before {
+    content: '';
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .country-item input[type="radio"]:checked + label:before {
+    background-color: #183568;
+  }
+
+  .country-item label:hover:before {
+    border-color: #70c1c1;
+  }
+
+  .country-item label span {
+    margin-left: 5px;
+  }
+
+.header-contact h1 {
+	
+}
+
+.contact-page .hbar, .  {
+  margin:-5px; /* Réglez la valeur de la marge supérieure selon vos besoins */
+}
+
+.locations-title {
+	margin-left:40px;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px; /* Ajoute un peu d'espace entre chaque élément */
+}
+
+.map-container-faq {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+    text-align: center;
+}
+
+.faq-image {
+	border: 2px solid #70c1c1; /* Ajoute une bordure transparente */
+    width: 100%;
+    opacity: 0.7;
+    transition: opacity 0.3s ease; /* Ajoute une transition fluide pour l'opacité */
+}
+
+.faq-image-eco {
+	border: 2px solid #70c1c1; /* Ajoute une bordure transparente */
+    width: 100%;
+    opacity: 0.5;
+    transition: opacity 0.3s ease; /* Ajoute une transition fluide pour l'opacité */
+}
+
+.faq-image-digt {
+	border: 2px solid #70c1c1; /* Ajoute une bordure transparente */
+    width: 100%;
+    opacity: 0.55;
+    transition: opacity 0.3s ease; /* Ajoute une transition fluide pour l'opacité */
+}
+
+.faq-image-present {
+	border: 2px solid #70c1c1; /* Ajoute une bordure transparente */
+    width: 100%;
+    opacity: 0.55;
+    transition: opacity 0.3s ease; /* Ajoute une transition fluide pour l'opacité */
+}
+
+.faq-image-eco:hover {
+	border: 2px solid transparent; /* Ajoute une bordure transparente */
+    opacity: 1; /* Augmente l'opacité lors du survol */
+}
+
+.faq-image:hover {
+	border: 2px solid transparent; /* Ajoute une bordure transparente */
+    opacity: 1; /* Augmente l'opacité lors du survol */
+}
+.faq-text {
+    text-align: center; /* Centrage du texte */
+    color: #183568;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease; /* Ajoute une transition fluide pour la couleur de bordure */
+}
+
+.faq-text p {
+    text-align: justify;
+    margin-bottom: 20px; /* Augmentation de l'espacement entre les paragraphes */
+    font-size: 18px;
+    line-height: 1.5; /* Hauteur de ligne */
+}
+
+.faq-text p::first-letter {
+    font-size: 150%;
+    margin-right: 5px;
+    float: none; /* Retrait du flottant */
+    color: #70c1c1;
+    font-weight: bold;
+}
+
+.faq-text p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Effets de survol pour les images */
+.store-image img {
+    max-width: 100%; /* Réduit la taille des images pour s'adapter */
+    height: auto; /* Ajuste la hauteur en fonction de la largeur */
+    border-radius: 20px; /* Coins arrondis */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition fluide */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+.store-image img:hover {
+    transform: scale(1.05); /* Zoom au survol */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée */
+}
+
+
+
+
+.map {
+    width: 100%;
+    max-width: 600px; /* Limite la largeur des cartes pour une meilleure lisibilité */
+}
+
+.map-link a {
+    color: rgb(24, 53, 104); /* Couleur du texte */
+    text-decoration: none; /* Supprime le soulignement par défaut */
+}
+
+a:hover {
+    color: #70c1c1; /* Couleur du texte au survol */
+}
+
+.footer {
+  position: relative; /* Garder le footer relatif */
+  width: 100%;
+  padding: 20px 30px;
+  background-color: #70c1c1;
+  color: #ffffff;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease; /* Transition en douceur pour le changement de couleur */
+}
+
+/* Effet de transition au survol du footer */
+.footer:hover {
+  background-color: #0d244c; /* Changement de couleur au survol */
+}
+
+
+/* Styles pour les liens dans le footer */
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px; /* Espacement entre les liens */
+}
+
+.footer-links a:hover {
+  text-decoration: underline; /* Souligner au survol */
+}
+
+.footer .social-icons {
+  margin: 10px 0;
+}
+
+.footer .social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 24px;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer .social-icons a:hover {
+  color: #70c1c1;
+}
+
+/* Gallery container styles */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.gallery-container-big {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.gallery-container-s {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 60px;
+}
+
+
+/* Gallery photo styles */
+.gallery-photo {
+  background:#f2f2f2;
+  position: relative;
+  overflow: hidden; /* Masque le contenu qui dépasse */
+  border-radius: 5px;
+  border: 2px solid rgb(24, 53, 104); /* Bordure par défaut */
+  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Ajout de transitions */
+}
+
+
+.gallery-photo-ss, .gallery-photo-sscc {
+  background:white;
+  position: relative;
+  overflow: hidden; /* Masque le contenu qui dépasse */
+  border-radius: 5px;
+  border: 2px solid rgb(24, 53, 104); /* Bordure par défaut */
+  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Ajout de transitions */
+}
+
+.gallery-photo:hover, .gallery-photo-ss:hover, .gallery-photo-sscc:hover {
+  transform: scale(1.05); /* Zoom au survol */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Ombre portée plus prononcée */
+  border-color: transparent; /* Bordure transparente au survol */
+}
+
+.gallery-photo img, .gallery-photo-ss img, .gallery-photo-sscc img {
+  object-fit: contain; /* Ajuste l'image pour qu'elle soit entièrement visible sans être coupée */
+  max-width: 100%; /* Largeur maximale de l'image */
+  max-height: 100%; /* Hauteur maximale de l'image */
+  width: auto; /* Largeur automatique pour conserver les proportions */
+  height: auto; /* Hauteur automatique pour conserver les proportions */
+  border-radius: 5px;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Ajout de transition pour l'animation de zoom */
+}
+
+.gallery-photo:hover img, .gallery-photo-ss:hover img, .gallery-photo-sscc:hover img {
+  opacity: 1; /* Opacité complète au survol */
+}
+
+.product-name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  background: rgb(24, 53, 104); /* Couleur de fond par défaut */
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: opacity 0.3s ease; /* Ajout de transition pour l'opacité */
+}
+
+.product-name:hover {
+  color:rgb(24,53,104);
+  background: #70c1c1
+ /* Dégradé transparent en haut */
+}
+
+.news {
+    font-family: Roboto, sans-serif; /* Police de caractères */
+    font-size: 18px; /* Taille de la police */
+    line-height: 1.5; /* Hauteur de ligne */
+    color: #183568; /* Couleur du texte */
+    text-align: center; /* Alignement du texte */
+    margin: 20px auto; /* Marge extérieure */
+    padding: 20px; /* Rembourrage intérieur */
+    background-color: #f0f8ff; /* Couleur de fond */
+    border: 2px solid #70c1c1; /* Bordure */
+    border-radius: 10px; /* Rayon de la bordure */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre portée */
+}
+
+.news:hover {
+    background-color: #e0f8ff; /* Couleur de fond au survol */
+    border-color: #0a6cb4; /* Couleur de la bordure au survol */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Ombre portée au survol */
+}
+
+.news::first-letter {
+    font-size: 150%; /* Taille de la première lettre */
+    margin-right: 5px; /* Marge à droite de la première lettre */
+    float: left; /* Flottant à gauche */
+    color: #70c1c1; /* Couleur de la première lettre */
+    font-weight: bold; /* Poids de la première lettre */
+    font-family: Georgia, serif; /* Police de la première lettre */
+}
+
+.news br {
+    display: none; /* Masquer les sauts de ligne */
+}
+
+.news:hover br {
+    display: initial; /* Afficher les sauts de ligne au survol */
+}
+
+
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: url('images/news.jpg'); /* Image de fond */
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Largeur du cadre */
+    height: 400px; /* Hauteur du cadre */
+}
+
+.newsletter-form input[type="email"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #183568;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #183568;
+    background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
+    box-sizing: border-box;
+    outline: none;
+    text-align: center; /* Centre le texte du placeholder */
+}
+
+.newsletter-form input[type="email"]::placeholder {
+    color: #183568;
+}
+
+.newsletter-form input[type="email"]:focus {
+    border-color: #183568;
+}
+
+.newsletter-form button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #183568;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button[type="submit"]:hover {
+    background-color: #70c1c1;
+}
+
+
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+
+/* Animation pour la transition entre le header/le footer et le contenu de la page */
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 1600px) { 
+  .sidebar {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 701px) {
+  .sidebar {
+    position: fixed;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .sidebar {
+    display: none;
+  }
+
+  .hbar {
+	margin-top:-20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hbar a {
+    flex: 1 1 auto;
+    width: auto;
+  }
+  
+  .content-text {
+	  margin-top:40px;
+  }
+  
+  .background-box, .background-box-gal {
+	  margin-top:180px;
+  }
+  
+  .content-text-box {
+	  margin-top:120px;
+  }
+  
+  .content-text-box-news{
+		margin-top:120px;
+  }
+
+  
+}
+
+@media screen and (max-height: 790px) {
+  .sidebar {
+    display: none;
+  }
+
+  .hbar {
+	margin-top:-20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hbar a {
+    flex: 1 1 auto;
+    width: auto;
+  }
+  
+   .content-text {
+	  margin-top:40px;
+  }
+  
+
+  .background-box, .background-box-gal {
+	  margin-top:180px
+  }
+  
+  .content-text-box {
+	  margin-top:120px;
+  }
+  
+  .content-text-box-news{
+		margin-top:120px;
+  }
+
+}
+
+@media screen and (max-width: 960px) {
+    .container-website-width960px {
+        margin: 0 auto; /* Centre le contenu sur l'écran */
+        max-width: 95%; /* Pour s'assurer que le contenu ne dépasse pas la largeur de l'écran */
+    }
+}
